@@ -65,6 +65,7 @@
             buttonSelectElementsFolder.TabIndex = 1;
             buttonSelectElementsFolder.Text = "Обзор";
             buttonSelectElementsFolder.UseVisualStyleBackColor = true;
+            buttonSelectElementsFolder.Click += buttonSelectElementsFolder_Click;
             // 
             // label1
             // 
@@ -114,7 +115,6 @@
             textBoxSkinColor.Name = "textBoxSkinColor";
             textBoxSkinColor.Size = new Size(108, 23);
             textBoxSkinColor.TabIndex = 0;
-            textBoxSkinColor.TextChanged += textBoxSkinColor_TextChanged;
             // 
             // label2
             // 
@@ -159,6 +159,7 @@
             buttonGenerate.TabIndex = 1;
             buttonGenerate.Text = "Создать";
             buttonGenerate.UseVisualStyleBackColor = true;
+            buttonGenerate.Click += buttonGenerate_Click;
             // 
             // textBoxResultPath
             // 
@@ -177,6 +178,7 @@
             buttonSelectResultFolder.TabIndex = 1;
             buttonSelectResultFolder.Text = "Обзор";
             buttonSelectResultFolder.UseVisualStyleBackColor = true;
+            buttonSelectResultFolder.Click += buttonSelectResultFolder_Click;
             // 
             // label3
             // 
@@ -207,6 +209,7 @@
             Controls.Add(textBoxElementsPath);
             Name = "Form";
             Text = "Генератор лиц";
+            FormClosed += Form_FormClosed;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
